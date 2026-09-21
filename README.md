@@ -112,8 +112,6 @@ Para simular esse cenário [use o *docker stop nome_container* para parar contai
 
 Ao terminar os experimentos, lembre-se de executar ```docker-compose down```
 
-
-
 ## Projetos Relacionados
 
 - [Micro Livraria](https://github.com/rodrigoclira/micro-livraria)
