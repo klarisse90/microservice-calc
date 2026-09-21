@@ -1,0 +1,34 @@
+version: '3.7'
+services:
+
+    ping:
+        build: ping
+
+    calc:
+        build: calc
+
+    soma:
+        build: soma
+
+    sub:
+        build: sub
+
+    mult1:
+        build: mult
+    mult2:
+        build: mult
+    mult_backup:
+        build: mult
+    nginx:
+        container_name: nginx
+        build: nginx
+        ports:
+            - 8080:80
+        depends_on:
+           - ping
+           - calc
+           - soma
+           - sub
+           - mult1
+           - mult2
+           - mult_backup
