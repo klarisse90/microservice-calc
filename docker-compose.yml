@@ -19,6 +19,7 @@ services:
         build: mult
     mult_backup:
         build: mult
+
     nginx:
         container_name: nginx
         build: nginx
